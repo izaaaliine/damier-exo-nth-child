@@ -1,0 +1,19 @@
+body {
+  width: 600px;
+}
+body div div {
+  height: 75px;
+  width: 75px;
+}
+
+body :nth-child(n) {
+  display: flex;
+}
+
+body div :nth-child(even) {
+  background-color: black;
+}
+
+body :nth-child(even) {
+  flex-direction: row-reverse;
+}
