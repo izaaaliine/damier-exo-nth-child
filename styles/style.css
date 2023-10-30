@@ -1,19 +1,24 @@
-body {
-  width: 600px;
-}
-body div div {
-  height: 75px;
-  width: 75px;
+div div {
+  height: 50px;
+  width: 50px;
 }
 
 body :nth-child(n) {
   display: flex;
 }
 
-body div :nth-child(even) {
+body :nth-child(even) :nth-child(2n) {
   background-color: black;
 }
 
-body :nth-child(even) {
-  flex-direction: row-reverse;
+body :nth-child(odd) :nth-child(2n + 1) {
+  background-color: black;
+}
+
+body :nth-child(odd) :nth-child(2n) {
+  background-color: red;
+}
+
+body :nth-child(even) :nth-child(2n + 1) {
+  background-color: red;
 }
